@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MOOSA SHARIF</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="https://kit.fontawesome.com/5ef8ba3a60.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+     <div class= "container">
+        
+        <nav>
+         <!-- <img src= "logo.png" class="logo" > -->
+         <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+         </ul>
+         <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+       </nav>
+     
+    
+      <div id="aboutme">
+          
+              <div class="row">
+                  <div class="about-col">
+                      <div class="header-text">
+                         <p>Engineer</p>
+                         <h1>Hi, I'm <span>Bappy</span></h1>
+                         <h3>Crafting Scalable, Reliable,and<br>Maintainable Software</h3>
+                     </div>
+                  </div>
+                  <div class="about-col2">
+                    <img src="imgb.jpg" alt="about" style="width: 700px; height: auto; ">
+                  </div>
+              </div>
+          
+      </div>
+     </div>
+    </div>
+    <!-- --------about-------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="aboutt.jpg" alt="about" style="width: 300px; height: auto;">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Dynamic engineering professional with proven expertise in full-stack web development. 
+                    Skilled in building scalable, efficient applications using HTML, CSS, JavaScript, React,
+                    Python, and Django. Committed to delivering high-quality software solutions through strong 
+                    analytical thinking, technical precision, and a deep understanding of both software 
+                    architecture and system-level design.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills', event)">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience', event)">Experience</p>
+                        <p class="tab-links" onclick="opentab('education', event)">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Full-Stack Web Development</span><br>Building responsive and interactive web 
+                                applications using React for front-end and Django for back-end. Skilled in HTML, CSS, 
+                                JavaScript, and managing version control with Git and GitHub. Experienced in creating RESTful APIs, 
+                                working with databases like SQL and MySQL, and deploying scalable applications.</li>
+                            <li><span>Programming & Software Development</span><br>Proficient in Python, JavaScript, 
+                                and C programming languages. Strong foundation in data structures, algorithms, and programming logic, 
+                                enabling efficient problem solving and clean code essential for software engineering roles.</li>
+                            <li><span>Systems & Software Engineering Fundamentals</span><br>Solid understanding of software design, 
+                                testing, debugging, and version control, combined with foundational systems knowledge from 
+                                Electrical & Electronic Engineering. </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Manha Automobiles — Car Dealership Showroom Website</span><br>Developed a fully 
+                                responsive website for Manha Automobiles, a car dealership showroom, using HTML, CSS, and JavaScript.
+                                 The site showcases available cars with detailed information and an intuitive layout, providing 
+                                 users with a seamless browsing experience across devices.</li>
+                            <li><span>Personal Portfolio Website</span><br>Designed and built a personal portfolio website from 
+                                scratch using HTML, CSS, and JavaScript to showcase my skills, projects, and experience. The 
+                                site features a clean, modern design with smooth navigation and responsive elements to ensure 
+                                accessibility on all screen sizes.</li>                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>East West University</span><br>B.Sc in Electrical and Electronic Engineering</li>
+                                 <p>Completed a comprehensive program at one of Bangladesh’s top private universities, 
+                                    gaining solid knowledge in circuit analysis, digital systems, control, and embedded 
+                                    programming.</p>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var tablinks= document.getElementsByClassName("tab-links");
+        var tabcontents= document.getElementsByClassName("tab-contents");
+
+         function opentab(tabname, event){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+         }
+    </script>
+
+    <!-- -----services------ -->
+     <div id="services">
+        <div class="container">
+             <h1 class="sub-title">My Services</h1>
+             <div class="services-list">
+             <div>
+                <i class="fa-solid fa-laptop-code"></i>
+                <h2>Full-Stack Website Development</h2>
+                <p>I create scalable, efficient web applications 
+                    with both front-end (React) and back-end (Django) 
+                    development, delivering clean, maintainable code and 
+                    RESTful APIs tailored to your project’s requirements. 
+                    Open to freelance projects of any size.</p>
+                <a href="#">Learn more</a>
+             </div>
+             <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>Mobile App Development</h2>
+                <p>I develop responsive, user-friendly mobile apps for Android 
+                    and iOS using React Native. Whether you need a 
+                    brand-new app or want to enhance an existing one, I 
+                    can deliver a smooth, high-quality experience.</p>
+                <a href="#">Learn more</a>
+             </div>
+             <div>
+               <i class="fa-solid fa-laptop-code"></i>
+                <h2>Custom Website Solutions</h2>
+                <p>I design and build custom websites to match unique 
+                    business needs, focusing on user experience, responsiveness, 
+                    and seamless functionality to help brands build a strong 
+                    online presence.</p>
+                <a href="#">Learn more</a>
+             </div>
+             <div>
+                <i class="fa-solid fa-terminal"></i>
+                <h2>Software Development, Testing & Optimization</h2>
+                <p>I deliver reliable software solutions using solid programming 
+                    fundamentals, data structures, algorithms, debugging, and 
+                    performance optimization to ensure efficiency and scalability.</p>
+                <a href="#">Learn more</a>
+             </div>
+             <div>
+                <i class="fa-solid fa-gear"></i>
+                <h2>System Integration & Automation</h2>
+                <p>I automate workflows and integrate software systems using Python 
+                    and scripting to improve efficiency, reduce manual work, and 
+                    streamline operations.</p>
+                <a href="#">Learn more</a>
+             </div>
+             </div>
+        </div>
+     </div>
+
+     <!-- -----Portfolio----- -->
+      
+      <div id="portfolio">
+       <div class="container">
+          <h1 class="sub-title">My Work</h1>
+          <div class="work-list">
+            <div class="work">
+                <img src="work1.jpg" alt="about" >
+                <div class="layer">
+                    <h3>Manha Automobiles — Car Dealership Website</h3>
+                    <p>Built a responsive showroom website using HTML, CSS, and JavaScript 
+                        to display available cars with detailed info and an intuitive, 
+                        mobile-friendly layout.</p>
+                    <a href="https://manhaautomobile.com" target="_blank" rel="noopener noreferrer">
+                     <i class="fa-solid fa-up-right-from-square"></i>
+                     </a>
+
+                </div>
+            </div>
+            <div class="work">
+                <img src="work2.jpg" alt="about" >
+                <div class="layer">
+                    <h3>Personal Portfolio Website</h3>
+                    <p>Created a personal portfolio using HTML, CSS, and JavaScript 
+                        to showcase skills and projects with a clean design, smooth navigation, 
+                        and full responsiveness.</p>
+                    <a href="#" ><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            
+          </div>
+          <a href="#" class="btn">See more</a>
+       </div>
+      </div>
+
+
+<!-- -----contact------ -->
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+               <h1 class="sub-title">Contact Me</h1>
+               <p><i class="fa-solid fa-paper-plane"></i> sharif.mizarul@gmail.com</p>
+               <p><i class="fa-solid fa-phone-volume"></i> 01915255100</p>
+               <div class="social-icons">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-solid fa-x"></i></a>
+               </div>
+               <a href="mycv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+               <form name="submit-to-google-sheet">
+                   <input type="text" name="Name" placeholder="Your Name" required>
+                   <input type="email" name="Email" placeholder="Your Email" required>
+                   <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                   <button type="submit" class="btn btn2" >Submit</button>
+               </form>
+               <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Bappy</p>
+    </div>
+ </div>
+
+ <script>
+    var sidemenu=document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+     function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+ </script>
+<!-- -----contact form------ -->
+ <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxmluCdHd74MLS3hW-OHtvQR8HB9nlrqCc3D-jXF2snFu3-RQpyQIc_pT-Xxd1t6T1Q/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg=document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {msg.innerHTML="Message sent successfully"
+        setTimeout(function(){
+            msg.innerHTML=""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+ </body>
+</html>
